@@ -16,7 +16,7 @@ class Bookly extends StatelessWidget {
     return GetMaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData.dark().copyWith(
-        scaffoldBackgroundColor: ConstantsStuff.kPrimaryColor,
+        scaffoldBackgroundColor: ConstantVars.kPrimaryColor,
       ),
       home: const SplashView(),
     );
