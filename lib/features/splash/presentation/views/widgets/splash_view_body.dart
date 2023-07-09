@@ -1,5 +1,8 @@
 import 'package:bookly/core/utils/assets.dart';
+import 'package:bookly/core/utils/constants.dart';
+import 'package:bookly/features/home/presentation/views/screen/home_screen.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 import 'sliding_text.dart';
 
@@ -14,14 +17,12 @@ class _SplashViewBodyState extends State<SplashViewBody>
     with SingleTickerProviderStateMixin {
   late AnimationController animationController;
   late Animation<Offset> sliding;
+  late CurvedAnimation curve;
   @override
   void initState() {
     super.initState();
-    animationController =
-        AnimationController(vsync: this, duration: const Duration(seconds: 1));
-    sliding = Tween<Offset>(begin: const Offset(0, 2), end: Offset.zero)
-        .animate(animationController);
-    animationController.forward();
+    startSplashAnimation();
+    navigateToHomeScreen();
   }
 
   @override
@@ -39,8 +40,28 @@ class _SplashViewBodyState extends State<SplashViewBody>
       children: [
         Image.asset(Asset.kLogo),
         const SizedBox(height: 5),
-        SlidingText(sliding: sliding),
+        SlidingText(
+          sliding: sliding,
+          controller: animationController,
+        ),
       ],
     );
+  }
+
+  void startSplashAnimation() {
+    animationController =
+        AnimationController(vsync: this, duration: const Duration(seconds: 1));
+    curve = CurvedAnimation(parent: animationController, curve: Curves.easeIn);
+    sliding = Tween<Offset>(begin: const Offset(0, 3), end: Offset.zero)
+        .animate(curve);
+    animationController.forward();
+  }
+
+  void navigateToHomeScreen() {
+    Future.delayed(Duration(seconds: 2), () {
+      Get.to(() => const HomeScreen(),
+          duration: ConstantVars.kTransitionDuration,
+          transition: Transition.fade);
+    });
   }
 }
