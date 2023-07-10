@@ -1,4 +1,5 @@
 import 'package:bookly/core/utils/constants.dart';
+import 'package:bookly/features/home/presentation/views/screen/home_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -20,7 +21,7 @@ class Bookly extends StatelessWidget {
           scaffoldBackgroundColor: ConstantVars.kPrimaryColor,
           textTheme:
               GoogleFonts.montserratTextTheme(ThemeData.dark().textTheme)),
-      home: const SplashView(),
+      home: const HomeScreen(),
     );
   }
 }
