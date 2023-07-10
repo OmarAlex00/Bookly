@@ -11,7 +11,7 @@ class BestSellerBooksItemRightSide extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const Padding(
-      padding: EdgeInsets.only(top: 15, bottom: 5),
+      padding: EdgeInsets.only(top: 15, bottom: 10),
       child: SizedBox(
         width: 200,
         child: Column(
