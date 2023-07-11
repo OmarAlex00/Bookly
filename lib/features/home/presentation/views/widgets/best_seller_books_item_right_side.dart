@@ -10,11 +10,11 @@ class BestSellerBooksItemRightSide extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Padding(
-      padding: EdgeInsets.only(top: 15, bottom: 10),
+    return Padding(
+      padding: const EdgeInsets.only(top: 15, bottom: 10),
       child: SizedBox(
-        width: 200,
-        child: Column(
+        width: MediaQuery.of(context).size.width * .48,
+        child: const Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             BestSellerBooksTitle(),
