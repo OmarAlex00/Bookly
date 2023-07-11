@@ -8,8 +8,8 @@ class BestSellerBooksRate extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 5),
+    return const Padding(
+      padding: EdgeInsets.symmetric(horizontal: 5),
       child: Text(
         '4.8',
         style: Styles.booksRateAndReview,

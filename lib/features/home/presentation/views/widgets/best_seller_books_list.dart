@@ -6,16 +6,16 @@ class BestSellerBooksList extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Expanded(
-      child: ListView.builder(
-        padding: const EdgeInsets.only(top: 5),
-        itemBuilder: (context, index) {
-          return const Padding(
-            padding: EdgeInsets.only(bottom: 15, left: 30, right: 48),
-            child: BestSellerBooksListItem(),
-          );
-        },
-      ),
+    return ListView.builder(
+      itemCount: 5,
+      physics: const NeverScrollableScrollPhysics(),
+      padding: const EdgeInsets.only(top: 5),
+      itemBuilder: (context, index) {
+        return const Padding(
+          padding: EdgeInsets.only(bottom: 15, left: 30, right: 48),
+          child: BestSellerBooksListItem(),
+        );
+      },
     );
   }
 }

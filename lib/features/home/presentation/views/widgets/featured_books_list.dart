@@ -6,9 +6,6 @@ class FeaturedBooksList extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Padding(
-      padding: EdgeInsets.only(left: 30),
-      child: FeaturedBooksListBody(),
-    );
+    return const FeaturedBooksListBody();
   }
 }

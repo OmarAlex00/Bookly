@@ -9,6 +9,7 @@ class FeaturedBooksListBuilder extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ListView.builder(
+      padding: const EdgeInsets.only(left: 30),
       scrollDirection: Axis.horizontal,
       itemBuilder: (context, index) {
         return const Padding(
