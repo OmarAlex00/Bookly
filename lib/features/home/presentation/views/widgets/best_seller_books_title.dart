@@ -13,6 +13,8 @@ class BestSellerBooksTitle extends StatelessWidget {
       child: Text(
         'Harry Potter and the Goblet of Fire',
         style: Styles.bestSellerBooksTitle,
+        maxLines: 2,
+        overflow: TextOverflow.ellipsis,
       ),
     );
   }
