@@ -7,9 +7,10 @@ class BestSellerBooksList extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ListView.builder(
-      itemCount: 5,
-      physics: const NeverScrollableScrollPhysics(),
-      padding: const EdgeInsets.only(top: 5),
+      shrinkWrap: true,
+      physics: NeverScrollableScrollPhysics(),
+      itemCount: 10,
+      padding: const EdgeInsets.only(top: 5, bottom: 20),
       itemBuilder: (context, index) {
         return const Padding(
           padding: EdgeInsets.only(bottom: 15, left: 30, right: 48),

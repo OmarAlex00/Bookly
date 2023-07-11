@@ -20,7 +20,7 @@ class HomeScreenBody extends StatelessWidget {
         SliverToBoxAdapter(
           child: BestSellerTitle(),
         ),
-        SliverFillRemaining(
+        SliverToBoxAdapter(
           child: BestSellerBooksList(),
         ),
       ],
