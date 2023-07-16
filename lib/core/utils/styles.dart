@@ -34,8 +34,6 @@ abstract class Styles {
       fontWeight: FontWeight.w500,
       fontStyle: FontStyle.italic,
       color: Colors.white.withOpacity(0.5));
-  static const youCanAlsoSee = TextStyle(
-      fontSize: 14,
-      fontFamily: ConstantVars.kSectraFont,
-      fontWeight: FontWeight.w600);
+  static const youCanAlsoSee =
+      TextStyle(fontSize: 14, fontWeight: FontWeight.w600);
 }

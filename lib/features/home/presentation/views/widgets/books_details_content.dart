@@ -3,7 +3,10 @@ import 'package:bookly/features/home/presentation/views/widgets/books_details_co
 import 'package:bookly/features/home/presentation/views/widgets/books_details_content_name.dart';
 import 'package:bookly/features/home/presentation/views/widgets/books_details_content_pricing_section.dart';
 import 'package:bookly/features/home/presentation/views/widgets/rate_and_count.dart';
+import 'package:bookly/features/home/presentation/views/widgets/you_can_also_like.dart';
 import 'package:flutter/material.dart';
+
+import 'other_books.dart';
 
 class BooksDetailsContent extends StatelessWidget {
   const BooksDetailsContent({super.key});
@@ -25,6 +28,14 @@ class BooksDetailsContent extends StatelessWidget {
           height: 37,
         ),
         BooksDetailsContentPricingSection(),
+        SizedBox(
+          height: 40,
+        ),
+        YouCanAlsoLike(),
+        SizedBox(
+          height: 15,
+        ),
+        OtherBooks(),
       ],
     );
   }
