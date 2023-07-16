@@ -14,7 +14,7 @@ class XIcon extends StatelessWidget {
         },
         icon: const Icon(
           Icons.close_sharp,
-          size: 35,
+          size: 30,
         ));
   }
 }

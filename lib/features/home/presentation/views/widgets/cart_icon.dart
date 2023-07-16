@@ -11,7 +11,7 @@ class CartIcon extends StatelessWidget {
       onPressed: () {},
       icon: const Icon(
         Icons.shopping_cart_outlined,
-        size: 25,
+        size: 30,
       ),
     );
   }

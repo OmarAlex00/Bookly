@@ -1,4 +1,4 @@
-import 'package:bookly/features/home/presentation/views/widgets/best_seller_books_img.dart';
+import 'package:bookly/features/home/presentation/views/widgets/books_img.dart';
 import 'package:flutter/material.dart';
 
 class BestSellerBooksItemLeftSide extends StatelessWidget {
@@ -8,6 +8,6 @@ class BestSellerBooksItemLeftSide extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const BestSellerBooksImg();
+    return const BooksImg();
   }
 }

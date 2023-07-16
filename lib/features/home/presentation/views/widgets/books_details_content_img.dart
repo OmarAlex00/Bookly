@@ -1,4 +1,4 @@
-import 'package:bookly/core/utils/assets.dart';
+import 'package:bookly/features/home/presentation/views/widgets/books_img.dart';
 import 'package:flutter/material.dart';
 
 class BooksDetailsContentImg extends StatelessWidget {
@@ -7,16 +7,7 @@ class BooksDetailsContentImg extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      height: MediaQuery.of(context).size.height * .32,
-      child: AspectRatio(
-          aspectRatio: 0.67,
-          child: Container(
-            decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(16),
-                image: const DecorationImage(
-                    image: AssetImage(Asset.kPlaceHolderImg),
-                    fit: BoxFit.fill)),
-          )),
-    );
+        height: MediaQuery.of(context).size.height * .32,
+        child: const BooksImg());
   }
 }

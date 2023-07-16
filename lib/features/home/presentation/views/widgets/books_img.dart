@@ -1,8 +1,8 @@
 import 'package:bookly/core/utils/assets.dart';
 import 'package:flutter/material.dart';
 
-class BestSellerBooksImg extends StatelessWidget {
-  const BestSellerBooksImg({
+class BooksImg extends StatelessWidget {
+  const BooksImg({
     super.key,
   });
 
