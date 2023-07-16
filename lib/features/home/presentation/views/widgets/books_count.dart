@@ -1,8 +1,8 @@
 import 'package:bookly/core/utils/styles.dart';
 import 'package:flutter/material.dart';
 
-class BestSellerBooksCount extends StatelessWidget {
-  const BestSellerBooksCount({
+class BooksCount extends StatelessWidget {
+  const BooksCount({
     super.key,
   });
 

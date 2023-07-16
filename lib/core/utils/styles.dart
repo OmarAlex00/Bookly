@@ -7,10 +7,11 @@ abstract class Styles {
   static const bestSellerBooksTitle = TextStyle(
       fontSize: 20,
       fontFamily: ConstantVars.kSectraFont,
-      fontWeight: FontWeight.w400);
+      fontWeight: FontWeight.w500);
   static final bestSellerBooksAuthor = TextStyle(
       fontSize: 14,
       fontWeight: FontWeight.w500,
+      fontStyle: FontStyle.italic,
       color: Colors.white.withOpacity(0.5));
   static const booksPrice = TextStyle(
     fontSize: 15,
@@ -27,10 +28,11 @@ abstract class Styles {
   static const detailsBooksTitle = TextStyle(
       fontSize: 30,
       fontFamily: ConstantVars.kSectraFont,
-      fontWeight: FontWeight.w400);
+      fontWeight: FontWeight.w500);
   static final detailsBooksAuthor = TextStyle(
       fontSize: 18,
       fontWeight: FontWeight.w500,
+      fontStyle: FontStyle.italic,
       color: Colors.white.withOpacity(0.5));
   static const youCanAlsoSee = TextStyle(
       fontSize: 14,

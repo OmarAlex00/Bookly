@@ -2,7 +2,7 @@ import 'package:bookly/features/home/presentation/views/widgets/books_details_co
 import 'package:bookly/features/home/presentation/views/widgets/books_details_content_img.dart';
 import 'package:bookly/features/home/presentation/views/widgets/books_details_content_name.dart';
 import 'package:bookly/features/home/presentation/views/widgets/books_details_content_pricing_section.dart';
-import 'package:bookly/features/home/presentation/views/widgets/books_details_content_rate_and_count_row.dart';
+import 'package:bookly/features/home/presentation/views/widgets/rate_and_count.dart';
 import 'package:flutter/material.dart';
 
 class BooksDetailsContent extends StatelessWidget {
@@ -20,7 +20,7 @@ class BooksDetailsContent extends StatelessWidget {
         SizedBox(
           height: 15,
         ),
-        BooksDetailsContentRateAndCount(),
+        RateAndCount(),
         SizedBox(
           height: 37,
         ),
