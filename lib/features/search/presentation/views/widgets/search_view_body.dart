@@ -1,4 +1,5 @@
 import 'package:bookly/core/utils/assets.dart';
+import 'package:bookly/features/home/presentation/views/widgets/best_seller_books_list%20copy.dart';
 import 'package:flutter/material.dart';
 
 import '../../../../../core/utils/styles.dart';
@@ -24,7 +25,8 @@ class SearchViewBody extends StatelessWidget {
                       opacity: 0.5, child: Image.asset(Asset.kSearchIcon)),
                 )),
           ),
-          const SearchResult()
+          const SearchResult(),
+          const Expanded(child: ResultsList())
         ],
       ),
     );
