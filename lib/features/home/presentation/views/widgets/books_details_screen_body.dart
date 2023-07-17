@@ -1,14 +1,6 @@
 import 'package:bookly/features/home/presentation/views/widgets/books_details_content.dart';
 import 'package:bookly/features/home/presentation/views/widgets/details_app_bar.dart';
-import 'package:bookly/features/home/presentation/views/widgets/rate_and_count.dart';
-import 'package:bookly/features/home/presentation/views/widgets/you_can_also_like.dart';
 import 'package:flutter/material.dart';
-
-import 'books_details_content_author.dart';
-import 'books_details_content_img.dart';
-import 'books_details_content_name.dart';
-import 'books_details_content_pricing_section.dart';
-import 'other_books.dart';
 
 class BooksDetailsScreenBody extends StatelessWidget {
   const BooksDetailsScreenBody({super.key});
