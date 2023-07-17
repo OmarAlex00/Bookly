@@ -14,8 +14,8 @@ abstract class Styles {
       fontStyle: FontStyle.italic,
       color: Colors.white.withOpacity(0.5));
   static const booksPrice = TextStyle(
-    fontSize: 15,
-    fontWeight: FontWeight.w700,
+    fontSize: 16,
+    fontWeight: FontWeight.w900,
   );
   static const booksRateAndReview = TextStyle(
     fontSize: 16,

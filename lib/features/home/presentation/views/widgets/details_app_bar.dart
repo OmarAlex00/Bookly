@@ -9,7 +9,7 @@ class DetailsAppBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const Padding(
-      padding: EdgeInsets.only(top: 40, left: 25, right: 25, bottom: 20),
+      padding: EdgeInsets.only(top: 40, left: 25, right: 25, bottom: 15),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [XIcon(), CartIcon()],

@@ -9,7 +9,7 @@ class BooksImg extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return AspectRatio(
-      aspectRatio: 0.66,
+      aspectRatio: 0.67,
       child: Container(
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(8),

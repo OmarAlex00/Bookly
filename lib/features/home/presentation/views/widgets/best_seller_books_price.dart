@@ -9,7 +9,7 @@ class BestSellerBooksPrice extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const Text(
-      '19.99 \$',
+      '19.99 €',
       style: Styles.booksPrice,
     );
   }

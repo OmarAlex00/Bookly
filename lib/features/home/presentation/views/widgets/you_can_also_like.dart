@@ -10,13 +10,12 @@ class YouCanAlsoLike extends StatelessWidget {
   Widget build(BuildContext context) {
     return const Padding(
       padding: EdgeInsets.symmetric(horizontal: 30),
-      child: Row(
-        children: [
-          Text(
-            'You can also like',
-            style: Styles.youCanAlsoSee,
-          )
-        ],
+      child: Align(
+        alignment: Alignment.centerLeft,
+        child: Text(
+          'You can also like',
+          style: Styles.youCanAlsoSee,
+        ),
       ),
     );
   }
