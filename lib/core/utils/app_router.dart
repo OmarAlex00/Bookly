@@ -10,7 +10,7 @@ abstract class AppRouter {
   static final router = GoRouter(routes: [
     GoRoute(
       path: '/',
-      builder: (context, state) => const BooksDetailsScreen(),
+      builder: (context, state) => const SplashView(),
     ),
     GoRoute(
       path: kHomeScreenRouter,
