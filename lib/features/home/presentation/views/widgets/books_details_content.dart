@@ -28,9 +28,6 @@ class BooksDetailsContent extends StatelessWidget {
           height: 37,
         ),
         BooksDetailsContentPricingSection(),
-        // SizedBox(
-        //   height: MediaQuery.of(context).size.height * .04,
-        // ),
         Expanded(
           child: SizedBox(
             height: 35,
