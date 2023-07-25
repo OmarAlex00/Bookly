@@ -16,13 +16,15 @@ class FeaturedBooksListBuilder extends StatelessWidget {
       builder: (context, state) {
         if (state is FeaturedBooksSuccess) {
           return ListView.builder(
+            physics: const BouncingScrollPhysics(),
+            itemCount: state.books.length,
             padding: const EdgeInsets.only(left: 30),
             scrollDirection: Axis.horizontal,
             itemBuilder: (context, index) {
-              return const Padding(
-                padding: EdgeInsets.only(right: 15),
+              return Padding(
+                padding: const EdgeInsets.only(right: 15),
                 child: BooksImg(
-                  url: '',
+                  url: state.books[index].volumeInfo.imageLinks.thumbnail,
                 ),
               );
             },
