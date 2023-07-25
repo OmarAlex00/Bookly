@@ -21,7 +21,9 @@ class FeaturedBooksListBuilder extends StatelessWidget {
             itemBuilder: (context, index) {
               return const Padding(
                 padding: EdgeInsets.only(right: 15),
-                child: BooksImg(),
+                child: BooksImg(
+                  url: '',
+                ),
               );
             },
           );

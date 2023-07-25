@@ -8,6 +8,8 @@ class BooksDetailsContentImg extends StatelessWidget {
   Widget build(BuildContext context) {
     return SizedBox(
         height: MediaQuery.of(context).size.height * .32,
-        child: const BooksImg());
+        child: const BooksImg(
+          url: '',
+        ));
   }
 }
