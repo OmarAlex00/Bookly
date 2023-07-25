@@ -9,7 +9,7 @@ class ErrorText extends StatelessWidget {
     return Center(
       child: Text(
         errMsg,
-        style: Styles.detailsBooksTitle,
+        style: Styles.homeTitleMedium,
       ),
     );
   }
