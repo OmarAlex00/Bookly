@@ -1,4 +1,3 @@
-import 'package:bookly/core/utils/assets.dart';
 import 'package:bookly/features/home/data/models/book_model/book_model.dart';
 import 'package:bookly/features/home/presentation/views/widgets/books_details_content_author.dart';
 import 'package:bookly/features/home/presentation/views/widgets/books_details_content_img.dart';
@@ -18,7 +17,7 @@ class BooksDetailsContent extends StatelessWidget {
     return Column(
       children: [
         BooksDetailsContentImg(
-          url: book.volumeInfo.imageLinks?.thumbnail ?? Asset.kOnlineImg,
+          book: book,
         ),
         const SizedBox(height: 25),
         BooksDetailsContentName(
@@ -26,7 +25,7 @@ class BooksDetailsContent extends StatelessWidget {
         ),
         const SizedBox(height: 5),
         BooksDetailsContentAuthor(
-          author: book.volumeInfo.authors![0],
+          author: book.volumeInfo.authors?[0] ?? '',
         ),
         const SizedBox(
           height: 15,

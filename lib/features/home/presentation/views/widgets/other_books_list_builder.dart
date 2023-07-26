@@ -2,7 +2,6 @@ import 'package:bookly/features/home/presentation/view_model/similar_books_cubit
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
-import '../../../../../core/utils/assets.dart';
 import '../../../../../core/widgets/error_text.dart';
 import '../../../../../core/widgets/loading_indicator.dart';
 import 'books_img.dart';
@@ -24,9 +23,7 @@ class OtherBooksListBuilder extends StatelessWidget {
               return Padding(
                 padding: const EdgeInsets.only(right: 15),
                 child: BooksImg(
-                  url: state.books[index].volumeInfo.imageLinks == null
-                      ? Asset.kOnlineImg
-                      : state.books[index].volumeInfo.imageLinks!.thumbnail!,
+                  book: state.books[index],
                 ),
               );
             },

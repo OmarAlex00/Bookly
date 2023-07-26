@@ -1,4 +1,3 @@
-import 'package:bookly/core/utils/assets.dart';
 import 'package:bookly/features/home/data/models/book_model/book_model.dart';
 import 'package:bookly/features/home/presentation/views/widgets/best_seller_books_item_left_side.dart';
 import 'package:bookly/features/home/presentation/views/widgets/best_seller_books_item_right_side.dart';
@@ -16,9 +15,7 @@ class BestSellerBooksItemMainRow extends StatelessWidget {
     return Row(
       children: [
         BestSellerBooksItemLeftSide(
-          bookImg: book.volumeInfo.imageLinks == null
-              ? Asset.kOnlineImg
-              : book.volumeInfo.imageLinks!.smallThumbnail!,
+          book: book,
         ),
         const SizedBox(
           width: 20,
