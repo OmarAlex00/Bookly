@@ -20,7 +20,7 @@ class BooksDetailsContentPrice extends StatelessWidget {
         ),
         child: Center(
           child: Text(
-            '19.99 €',
+            'Free',
             style: Styles.booksPrice.copyWith(color: Colors.black),
           ),
         ),

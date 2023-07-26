@@ -1,6 +1,5 @@
+import 'package:bookly/features/home/presentation/views/widgets/other_books_list_builder.dart';
 import 'package:flutter/material.dart';
-
-import 'featured_books_list_builder.dart';
 
 class OtherBooks extends StatelessWidget {
   const OtherBooks({super.key});
@@ -9,7 +8,7 @@ class OtherBooks extends StatelessWidget {
   Widget build(BuildContext context) {
     return SizedBox(
       height: MediaQuery.of(context).size.height * 0.14,
-      child: const FeaturedBooksListBuilder(),
+      child: const OtherBooksListBuilder(),
     );
   }
 }

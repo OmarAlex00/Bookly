@@ -26,7 +26,7 @@ abstract class Styles {
       fontWeight: FontWeight.w400,
       color: Colors.white.withOpacity(0.3));
   static const detailsBooksTitle = TextStyle(
-      fontSize: 30,
+      fontSize: 26,
       fontFamily: ConstantVars.kSectraFont,
       fontWeight: FontWeight.w500);
   static final detailsBooksAuthor = TextStyle(
