@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 
 class BooksDetailsContentFreePreview extends StatelessWidget {
-  const BooksDetailsContentFreePreview({super.key});
-
+  const BooksDetailsContentFreePreview({super.key, this.link});
+  final Function()? link;
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-      onTap: () {},
+      onTap: link,
       child: Container(
         height: 48,
         width: 150,

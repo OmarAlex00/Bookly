@@ -34,7 +34,9 @@ class BooksDetailsContent extends StatelessWidget {
         const SizedBox(
           height: 37,
         ),
-        const BooksDetailsContentPricingSection(),
+        BooksDetailsContentPricingSection(
+          book: book,
+        ),
         const Expanded(
           child: SizedBox(
             height: 35,
