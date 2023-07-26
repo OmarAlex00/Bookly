@@ -4,14 +4,15 @@ import 'package:flutter/material.dart';
 class BestSellerBooksTitle extends StatelessWidget {
   const BestSellerBooksTitle({
     super.key,
+    required this.bookTitle,
   });
-
+  final String bookTitle;
   @override
   Widget build(BuildContext context) {
-    return const Padding(
-      padding: EdgeInsets.only(bottom: 2),
+    return Padding(
+      padding: const EdgeInsets.only(bottom: 2),
       child: Text(
-        'Harry Potter and the Goblet of Fire',
+        bookTitle,
         style: Styles.bestSellerBooksTitle,
         maxLines: 2,
         overflow: TextOverflow.ellipsis,

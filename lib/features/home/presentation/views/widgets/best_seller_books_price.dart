@@ -4,12 +4,14 @@ import 'package:flutter/material.dart';
 class BestSellerBooksPrice extends StatelessWidget {
   const BestSellerBooksPrice({
     super.key,
+    required this.price,
   });
+  final String price;
 
   @override
   Widget build(BuildContext context) {
-    return const Text(
-      '19.99 €',
+    return Text(
+      price,
       style: Styles.booksPrice,
     );
   }

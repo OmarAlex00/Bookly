@@ -4,12 +4,14 @@ import 'package:flutter/material.dart';
 class BestSellerBooksItemLeftSide extends StatelessWidget {
   const BestSellerBooksItemLeftSide({
     super.key,
+    required this.bookImg,
   });
+  final String bookImg;
 
   @override
   Widget build(BuildContext context) {
-    return const BooksImg(
-      url: '',
+    return BooksImg(
+      url: bookImg,
     );
   }
 }

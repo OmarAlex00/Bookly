@@ -1,3 +1,4 @@
+import 'package:bookly/core/utils/assets.dart';
 import 'package:bookly/core/widgets/error_text.dart';
 import 'package:bookly/core/widgets/loading_indicator.dart';
 import 'package:bookly/features/home/presentation/view_model/featured_books_cubit/featured_books_cubit.dart';
@@ -24,7 +25,9 @@ class FeaturedBooksListBuilder extends StatelessWidget {
               return Padding(
                 padding: const EdgeInsets.only(right: 15),
                 child: BooksImg(
-                  url: state.books[index].volumeInfo.imageLinks.thumbnail,
+                  url: state.books[index].volumeInfo.imageLinks == null
+                      ? Asset.kOnlineImg
+                      : state.books[index].volumeInfo.imageLinks!.thumbnail!,
                 ),
               );
             },
