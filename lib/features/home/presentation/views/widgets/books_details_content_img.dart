@@ -1,3 +1,4 @@
+import 'package:bookly/core/utils/assets.dart';
 import 'package:bookly/features/home/presentation/views/widgets/books_img.dart';
 import 'package:flutter/material.dart';
 
@@ -9,7 +10,7 @@ class BooksDetailsContentImg extends StatelessWidget {
     return SizedBox(
         height: MediaQuery.of(context).size.height * .32,
         child: const BooksImg(
-          url: '',
+          url: Asset.kOnlineImg,
         ));
   }
 }
