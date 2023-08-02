@@ -9,8 +9,11 @@ class BooksDetailsContentImg extends StatelessWidget {
   Widget build(BuildContext context) {
     return SizedBox(
         height: MediaQuery.of(context).size.height * .32,
-        child: DetailImg(
-          book: book,
+        child: Hero(
+          tag: book.id!,
+          child: DetailImg(
+            book: book,
+          ),
         ));
   }
 }

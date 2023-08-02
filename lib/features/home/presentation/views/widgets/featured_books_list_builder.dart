@@ -23,8 +23,11 @@ class FeaturedBooksListBuilder extends StatelessWidget {
             itemBuilder: (context, index) {
               return Padding(
                 padding: const EdgeInsets.only(right: 15),
-                child: BooksImg(
-                  book: state.books[index],
+                child: Hero(
+                  tag: state.books[index].id!,
+                  child: BooksImg(
+                    book: state.books[index],
+                  ),
                 ),
               );
             },
