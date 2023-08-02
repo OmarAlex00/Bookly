@@ -11,3 +11,9 @@ class ConstantVars {
     size: 15,
   );
 }
+
+class ConstantsTags {
+  static const String kFeaturedTags = 'Featured';
+  static const String kBestSellerTags = 'BestSeller';
+  static const String kOthersTags = 'Others';
+}

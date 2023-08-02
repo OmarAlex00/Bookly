@@ -12,7 +12,7 @@ class BestSellerBooksItemLeftSide extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Hero(
-      tag: book.id!,
+      tag: '${book.tag}${book.id}',
       child: BooksImg(
         book: book,
       ),

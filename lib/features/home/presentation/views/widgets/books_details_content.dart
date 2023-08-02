@@ -46,7 +46,9 @@ class BooksDetailsContent extends StatelessWidget {
         const SizedBox(
           height: 25,
         ),
-        const OtherBooks(),
+        OtherBooks(
+          book: book,
+        ),
       ],
     );
   }

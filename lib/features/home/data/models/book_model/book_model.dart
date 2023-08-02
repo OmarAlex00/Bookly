@@ -14,35 +14,37 @@ class BookModel extends Equatable {
   final SaleInfo? saleInfo;
   final AccessInfo? accessInfo;
   final SearchInfo? searchInfo;
+  final String? tag;
 
-  const BookModel({
-    this.kind,
-    this.id,
-    this.etag,
-    this.selfLink,
-    required this.volumeInfo,
-    this.saleInfo,
-    this.accessInfo,
-    this.searchInfo,
-  });
+  const BookModel(
+      {this.kind,
+      this.id,
+      this.etag,
+      this.selfLink,
+      required this.volumeInfo,
+      this.saleInfo,
+      this.accessInfo,
+      this.searchInfo,
+      this.tag});
 
-  factory BookModel.fromJson(Map<String, dynamic> json) => BookModel(
-        kind: json['kind'] as String?,
-        id: json['id'] as String?,
-        etag: json['etag'] as String?,
-        selfLink: json['selfLink'] as String?,
-        volumeInfo:
-            VolumeInfo.fromJson(json['volumeInfo'] as Map<String, dynamic>),
-        saleInfo: json['saleInfo'] == null
-            ? null
-            : SaleInfo.fromJson(json['saleInfo'] as Map<String, dynamic>),
-        accessInfo: json['accessInfo'] == null
-            ? null
-            : AccessInfo.fromJson(json['accessInfo'] as Map<String, dynamic>),
-        searchInfo: json['searchInfo'] == null
-            ? null
-            : SearchInfo.fromJson(json['searchInfo'] as Map<String, dynamic>),
-      );
+  factory BookModel.fromJson(Map<String, dynamic> json, String tag) =>
+      BookModel(
+          kind: json['kind'] as String?,
+          id: json['id'] as String?,
+          etag: json['etag'] as String?,
+          selfLink: json['selfLink'] as String?,
+          volumeInfo:
+              VolumeInfo.fromJson(json['volumeInfo'] as Map<String, dynamic>),
+          saleInfo: json['saleInfo'] == null
+              ? null
+              : SaleInfo.fromJson(json['saleInfo'] as Map<String, dynamic>),
+          accessInfo: json['accessInfo'] == null
+              ? null
+              : AccessInfo.fromJson(json['accessInfo'] as Map<String, dynamic>),
+          searchInfo: json['searchInfo'] == null
+              ? null
+              : SearchInfo.fromJson(json['searchInfo'] as Map<String, dynamic>),
+          tag: tag);
 
   Map<String, dynamic> toJson() => {
         'kind': kind,

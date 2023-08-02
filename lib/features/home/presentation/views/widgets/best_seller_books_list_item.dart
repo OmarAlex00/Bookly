@@ -6,9 +6,10 @@ import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
 class BestSellerBooksListItem extends StatelessWidget {
-  const BestSellerBooksListItem({super.key, required this.book});
+  const BestSellerBooksListItem(
+      {super.key, required this.book, required this.tag});
   final BookModel book;
-
+  final String tag;
   @override
   Widget build(BuildContext context) {
     return GestureDetector(

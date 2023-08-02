@@ -23,6 +23,7 @@ class BestSellerBooksList extends StatelessWidget {
                 padding: const EdgeInsets.only(bottom: 15, left: 30, right: 48),
                 child: BestSellerBooksListItem(
                   book: state.books[index],
+                  tag: 'Featured',
                 ),
               );
             },

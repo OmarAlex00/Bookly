@@ -1,5 +1,6 @@
 import 'package:bookly/core/errors/failure.dart';
 import 'package:bookly/core/utils/api_service.dart';
+import 'package:bookly/core/utils/constants.dart';
 import 'package:bookly/features/home/data/models/book_model/book_model.dart';
 import 'package:bookly/features/home/data/repos/home_repo.dart';
 import 'package:dartz/dartz.dart';
@@ -16,7 +17,7 @@ class HomeRepoImpl implements HomeRepo {
       Map<String, dynamic> data =
           await apiService.get('volumes?Filtering=free-ebooks&q=computer');
       for (var element in data['items']) {
-        books.add(BookModel.fromJson(element));
+        books.add(BookModel.fromJson(element, ConstantsTags.kBestSellerTags));
       }
       return right(books);
     } catch (e) {
@@ -32,7 +33,7 @@ class HomeRepoImpl implements HomeRepo {
       Map<String, dynamic> data =
           await apiService.get('volumes?Filtering=free-ebooks&q=programming');
       for (var element in data['items']) {
-        books.add(BookModel.fromJson(element));
+        books.add(BookModel.fromJson(element, ConstantsTags.kFeaturedTags));
       }
       return right(books);
     } catch (e) {
@@ -49,7 +50,7 @@ class HomeRepoImpl implements HomeRepo {
       Map<String, dynamic> data = await apiService.get(
           'volumes?Filtering=free-ebooks&Sorting=relevance&q=$categoryName');
       for (var element in data['items']) {
-        books.add(BookModel.fromJson(element));
+        books.add(BookModel.fromJson(element, ConstantsTags.kOthersTags));
       }
       return right(books);
     } catch (e) {
