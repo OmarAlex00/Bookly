@@ -9,6 +9,9 @@ import 'package:bookly/features/splash/presentation/views/screens/splash_view.da
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:go_router/go_router.dart';
 
+import '../../features/search/data/repos/search_repo_imp.dart';
+import '../../features/search/presentation/view_model/cubit/search_cubit_cubit.dart';
+
 abstract class AppRouter {
   static const String kHomeScreenRouter = '/homeScreenRoute';
   static const String kBooksDetailsScreenRouter = '/bookDetailsScreenRoute';
@@ -34,7 +37,10 @@ abstract class AppRouter {
     ),
     GoRoute(
       path: kSearchScreenRouter,
-      builder: (context, state) => const SearchView(),
+      builder: (context, state) => BlocProvider(
+        create: (context) => SearchCubitCubit(getIt.get<SearchRepoImp>()),
+        child: const SearchView(),
+      ),
     ),
   ]);
 }

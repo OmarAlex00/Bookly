@@ -16,4 +16,5 @@ class ConstantsTags {
   static const String kFeaturedTags = 'Featured';
   static const String kBestSellerTags = 'BestSeller';
   static const String kOthersTags = 'Others';
+  static const String kResults = 'Results';
 }
