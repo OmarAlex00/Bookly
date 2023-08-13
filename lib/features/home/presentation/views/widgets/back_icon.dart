@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
-class XIcon extends StatelessWidget {
-  const XIcon({
+class BackIcon extends StatelessWidget {
+  const BackIcon({
     super.key,
   });
 
@@ -13,7 +13,7 @@ class XIcon extends StatelessWidget {
           GoRouter.of(context).pop();
         },
         icon: const Icon(
-          Icons.close_sharp,
+          Icons.arrow_back,
           size: 30,
         ));
   }

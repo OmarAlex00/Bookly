@@ -2,8 +2,8 @@ import 'package:bookly/core/utils/app_router.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
-class CartIcon extends StatelessWidget {
-  const CartIcon({
+class CloseIcon extends StatelessWidget {
+  const CloseIcon({
     super.key,
   });
 
@@ -14,7 +14,7 @@ class CartIcon extends StatelessWidget {
         GoRouter.of(context).push(AppRouter.kHomeScreenRouter);
       },
       icon: const Icon(
-        Icons.home,
+        Icons.close_sharp,
         size: 30,
       ),
     );

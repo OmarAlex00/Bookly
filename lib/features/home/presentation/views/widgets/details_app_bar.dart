@@ -1,7 +1,7 @@
-import 'package:bookly/features/home/presentation/views/widgets/cart_icon.dart';
+import 'package:bookly/features/home/presentation/views/widgets/close_icon.dart';
 import 'package:flutter/material.dart';
 
-import 'x_icon.dart';
+import 'back_icon.dart';
 
 class DetailsAppBar extends StatelessWidget {
   const DetailsAppBar({super.key});
@@ -12,7 +12,7 @@ class DetailsAppBar extends StatelessWidget {
       padding: EdgeInsets.only(top: 40, left: 25, right: 25, bottom: 15),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
-        children: [XIcon(), CartIcon()],
+        children: [BackIcon(), CloseIcon()],
       ),
     );
   }
